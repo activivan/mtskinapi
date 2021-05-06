@@ -55,7 +55,7 @@ You can set the skin mod with:
 skin_mod = simple_skins
 ```
 
-*Note: If you are using `mineclone2` you do not need to define a skins mod as one is already in the game - if you define a skin mod nevertheless it will just be ignored*
+*Note: If you are using `mineclone2` you do not need to define a skin mod as one is already in the game - if you define a skin mod nevertheless it will just be ignored*
 
 
 
@@ -81,7 +81,7 @@ pip3 install bjoern
 
 #### Installing and using screen
 
-To run Minetest SkinAPI in the background (what you want - otherwise it would block your terminal) it's recommend to use screen. Screen allows you to multiplex your terminal into virtual terminals, so you can run Minetest SkinAPI in a virtual terminal.
+To run Minetest SkinAPI in the background (what you want - otherwise it would block your terminal) it's recommended to use screen. Screen allows you to multiplex your terminal into virtual terminals, so you can run Minetest SkinAPI in a virtual terminal.
 
 To install screen, type this into the command prompt:
 
@@ -101,7 +101,7 @@ You should be automatically attached to this new screen. Now, make sure that you
 python3 app.py
 ```
 
-You should be done! Your Minetest SkinAPI is running on the IP and Port you set in the configuration. Default is: `0.0.0.0:3008`
+You should be done! Your Minetest SkinAPI is running on the Host and Port you set in the configuration. Default is: `0.0.0.0:3008`
 
 #### Helpful commands
 

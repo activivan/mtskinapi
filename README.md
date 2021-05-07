@@ -138,7 +138,7 @@ You can see an API documentation on the base url of your running app.
 You can get the Head of a Player using following API structure:
 
 ````
-http://127.0.0.1:3008/head/playername
+http://example.com:3008/head/playername
 ````
 
 You can also simply set the size of the result. Just add the width in pixels:

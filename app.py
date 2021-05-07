@@ -18,7 +18,9 @@ config.read(configFile)
 game = config["general"].get("game")
 mod = config["general"].get("skin_mod")
 
-if game == None or mod == None and game != "mineclone2":
+games = ["minetest_game", "mineclone2"]
+
+if game == None or game not in games or mod == None and game != "mineclone2":
     print("[ERROR] Configuration incomplete! Read configuration.md for more information!")
     exit()
 

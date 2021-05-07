@@ -4,7 +4,7 @@ Created by activivan
 
 
 
-The Minetest SkinAPI allows you to customize your Minetest Web Projects! You can easily get the head, a bust or a body preview of a Minetest skin from just the player name! You can even set the size of the result! It supports the most common skin mods as well as MineClone 2. Using Python Pillow and Flask it's fast and lightweight. Just drop it into your world folder and get started!
+The Minetest SkinAPI allows you to personalize your Minetest Web Projects! You can easily get the head, a bust or a body preview of a Minetest skin from just the player name! You can even set the size of the result! It supports the most common skin mods as well as MineClone 2. Using Python Pillow and Flask it's fast and lightweight. Just drop it into your world folder and get started!
 
 
 

@@ -21,7 +21,7 @@ git clone https://github.com/activivan/mtskinapi.git
 
 #### Installing requirements
 
-After downloading Minetest SkinAPI, let's install the required python modules. Navigate into the `mtskinapi` folder you just downloaded into your world folder. Then type into the command prompt:
+After downloading Minetest SkinAPI, let's install the required python modules. Navigate into the `mtskinapi` folder you just downloaded into your world folder. Then type into the command prompt (you should have `python3` installed):
 
 ```shell
 pip3 install -r requirements.txt

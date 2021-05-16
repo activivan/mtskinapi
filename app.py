@@ -29,8 +29,10 @@ image_format = config["output"].get("image_format", "PNG")
 image_mode = config["output"].get("image_mode", "RGBA")
 
 if game == "minetest_game" and mod == "skinsdb":
+    global json
     import json
 else:
+    global sqlite3
     import sqlite3
     from sqlite3 import Error
 

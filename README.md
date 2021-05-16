@@ -10,6 +10,13 @@ The Minetest SkinAPI allows you to personalize your Minetest Web Projects! You c
 
 ## Installation
 
+#### Requirements and Support
+
+- Python 3 (`python3`) required
+- Supported Minetest Games: `minetest_game` and `mineclone2`
+- Supported Minetest Skin Mods: `skinsdb` and `simple_skins` (only required if `minetest_game` is used)
+- Minetest SkinAPI currently only supports SQLite3 (`sqlite3`) as Minetest Database Backend (Minetest default Database). However, if you are using `minetest_game` and as skin mod `skinsdb`, you can use any Database. 
+
 #### Downloading Minetest SkinAPI
 
 Minetest SkinAPI needs to be put into the world folder of the world it should use the data of. You can use git to clone this repository into your desired world folder. For example:
@@ -19,9 +26,9 @@ cd minetest/worlds/myworld
 git clone https://github.com/activivan/mtskinapi.git
 ```
 
-#### Installing requirements
+#### Installing Python requirements
 
-After downloading Minetest SkinAPI, let's install the required python modules. Navigate into the `mtskinapi` folder you just downloaded into your world folder. Then type into the command prompt (you should have `python3` installed):
+After downloading Minetest SkinAPI, let's install the required python modules. Navigate into the `mtskinapi` folder you just downloaded into your world folder. Then type into the command prompt:
 
 ```shell
 pip3 install -r requirements.txt

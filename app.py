@@ -3,9 +3,6 @@
 
 from configparser import ConfigParser
 from pathlib import Path
-import json
-import sqlite3
-from sqlite3 import Error
 from flask import Flask, render_template, request, send_file
 from PIL import Image
 from io import BytesIO
@@ -19,9 +16,10 @@ game = config["general"].get("game")
 mod = config["general"].get("skin_mod")
 
 games = ["minetest_game", "mineclone2"]
+mods = ["simple_skins", "skinsdb"]
 
-if game == None or game not in games or mod == None and game != "mineclone2":
-    print("[ERROR] Configuration incomplete! Read configuration.md for more information!")
+if game == None or game not in games or mod == None and game != "mineclone2" or mod not in mods and game != "mineclone2":
+    print("[ERROR] Configuration incomplete or not valid! Read configuration.md for more information!")
     exit()
 
 server_port = config["server"].get("server_port", 3008)
@@ -29,6 +27,12 @@ server_host = config["server"].get("server_host", "0.0.0.0")
 wsgi_server = config["server"].get("wsgi_server", "bjoern")
 image_format = config["output"].get("image_format", "PNG")
 image_mode = config["output"].get("image_mode", "RGBA")
+
+if game == "minetest_game" and mod == "skinsdb":
+    import json
+else:
+    import sqlite3
+    from sqlite3 import Error
 
 # Data
 thisfile = Path(__file__).resolve()
